@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".FirstFragment">
+
+
+
+
+
+    <!--  <TextView
+          android:id="@+id/textview_first"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:text="@string/hello_first_fragment"
+         app:layout_constraintBottom_toTopOf="@id/button_first"
+          app:layout_constraintEnd_toEndOf="parent"
+          app:layout_constraintStart_toStartOf="parent"
+          app:layout_constraintTop_toTopOf="parent" />
+
+      <Button
+          android:id="@+id/button_first"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:text="@string/next"
+          app:layout_constraintBottom_toBottomOf="parent"
+          app:layout_constraintEnd_toEndOf="parent"
+          app:layout_constraintStart_toStartOf="parent"
+          app:layout_constraintTop_toBottomOf="@id/textview_first" /> -->
+
+
+    <RelativeLayout
+        android:id="@+id/relativeLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:paddingTop="?android:attr/actionBarSize">
+
+
+       <!-- <ListView
+            android:id="@+id/listView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />-->
+
+        <Button
+            android:id="@+id/btnStop"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@id/btnRecord"
+            android:layout_marginRight="32dp"
+            android:layout_toLeftOf="@id/btnRecord"
+            android:text="Stop" />
+
+        <Button
+            android:id="@+id/btnPlay"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@id/btnRecord"
+            android:layout_marginLeft="32dp"
+
+
+            android:layout_toRightOf="@id/btnRecord"
+
+
+            android:text="Play" />
+
+
+        <!-- <ImageButton
+
+             android:id="@+id/VoiceBtn"
+             android:layout_width="150dp"
+             android:layout_height="150dp"
+             android:layout_centerHorizontal="true"
+             android:layout_centerVertical="true"
+             android:background="@null"
+             android:scaleType="fitCenter"
+             android:src="@drawable/ic_baseline_mic_none_24" />-->
+
+        <Button
+            android:id="@+id/btnRecord"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="16dp"
+            android:text="Record" />
+
+        <TextView
+            android:id="@+id/TextTv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            android:text="cliquez sur le boutton pour enregistrer votre voix "
+            android:textColor="#000"
+            android:textSize="20sp" />
+
+
+        <!-- ListView -->
+
+       <!-- <ListView
+            android:id="@+id/listView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_above="@id/btnRecord"
+            android:layout_below="@id/TextTv"
+            android:layout_marginTop="16dp"
+            android:padding="8dp" />-->
+
+      <!--  <include
+            android:id="@+id/includedLayout"
+            layout="@layout/mylist"
+
+            />-->
+
+        <FrameLayout
+            android:id="@+id/frameLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_above="@id/btnRecord"
+            android:layout_below="@id/TextTv"
+            android:layout_margin="16dp"
+           >
+
+            <include
+                android:id="@+id/includedLayout"
+                layout="@layout/mylist" />
+
+        </FrameLayout>
+
+
+    </RelativeLayout>
+
+
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

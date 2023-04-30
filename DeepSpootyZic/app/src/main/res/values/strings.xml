@@ -1,0 +1,30 @@
+<resources>
+    <string name="app_name">DeepSpootyZic</string>
+    <string name="action_settings">Settings</string>
+    <!-- Strings used for fragments for navigation -->
+    <string name="first_fragment_label">First Fragment</string>
+    <string name="second_fragment_label">Second Fragment</string>
+    <string name="next">Next</string>
+    <string name="previous">Previous</string>
+
+    <string name="hello_first_fragment">Hello first fragment</string>
+    <string name="hello_second_fragment">Hello second fragment. Arg: %1$s</string>
+
+
+
+        <string-array name="array_technology">
+            <item>Musique 1</item>
+            <item>Musique 2</item>
+            <item>Musique 3</item>
+            <item>Musique 4</item>
+            <item>Musique 5</item>
+            <item>Musique 6</item>
+            <item>Musique 7</item>
+            <item>Musique 8</item>
+            <item>Musique 9</item>
+            <item>Musique 10</item>
+            <item>Musique 11</item>
+            <item>Musique 12</item>
+        </string-array>
+
+</resources>
